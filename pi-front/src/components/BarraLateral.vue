@@ -11,12 +11,13 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-view-dashboard" title="DashBoard" value="dashboard"></v-list-item>
+          <router-link to="dashboard" style="text-decoration: none; color: inherit;"><v-list-item prepend-icon="mdi-view-dashboard" title="DashBoard" value="dashboard"></v-list-item></router-link>
           <v-list-item prepend-icon="mdi-format-list-bulleted-square" title="Frequencia" value="frequencia"></v-list-item>
           <v-list-item prepend-icon="mdi-account-group" title="Turmas" value="turmas"></v-list-item>
+          <router-link to="home" style="text-decoration: none; color: inherit;"><v-list-item prepend-icon="mdi-view-dashboard" title="Home" value="Home"></v-list-item></router-link>
         </v-list>
       </v-navigation-drawer>
-      <v-main style="height: 940px"></v-main> 
+      <v-main style="height: 970px"></v-main> 
     </v-layout>
   </v-card>
 </template>
